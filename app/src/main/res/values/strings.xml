@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Zaglushka35</string>
+    <string-array name="words_categories">
+        <item>football</item>
+        <item>volleyball</item>
+        <item>basketball</item>
+        <item>tennis</item>
+        <item>biatlon</item>
+        <item>bowling</item>
+        <item>boxing</item>
+        <item>cricket</item>
+        <item>crossfit</item>
+        <item>cycling</item>
+        <item>diving</item>
+        <item>fishing</item>
+        <item>golf</item>
+        <item>gymnastics</item>
+        <item>judo</item>
+        <item>karate</item>
+        <item>polo</item>
+        <item>powerlifting</item>
+        <item>rugby</item>
+        <item>shooting</item>
+        <item>skiing</item>
+        <item>snooker</item>
+        <item>surfing</item>
+        <item>wrestling</item>
+        <item>poker</item>
+        <item>handball</item>
+    </string-array>
+</resources>

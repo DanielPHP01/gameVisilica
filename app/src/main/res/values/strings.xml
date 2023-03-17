@@ -27,5 +27,9 @@
         <item>wrestling</item>
         <item>poker</item>
         <item>handball</item>
+        <item>triathlon</item>
+        <item>swimming</item>
+        <item>skiing</item>
+        <item>jumping</item>
     </string-array>
 </resources>

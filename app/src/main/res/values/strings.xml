@@ -31,5 +31,55 @@
         <item>swimming</item>
         <item>skiing</item>
         <item>jumping</item>
+        <item>archery</item>
+        <item>badminton</item>
+        <item>baseball</item>
+        <item>bodybuilding</item>
+        <item>canoeing</item>
+        <item>climbing</item>
+        <item>curling</item>
+        <item>equestrian</item>
+        <item>figureskating</item>
+        <item>freestyleskiing</item>
+        <item>gymkhana</item>
+        <item>hiking</item>
+        <item>icehockey</item>
+        <item>karate</item>
+        <item>kayaking</item>
+        <item>kickboxing</item>
+        <item>mountainbiking</item>
+        <item>rowing</item>
+        <item>skateboarding</item>
+        <item>skydiving</item>
+        <item>snowboarding</item>
+        <item>squash</item>
+        <item>table tennis</item>
+        <item>taekwondo</item>
+        <item>track and field</item>
+        <item>triathlon</item>
+        <item>ultimate frisbee</item>
+        <item>waterpolo</item>
+        <item>weightlifting</item>
+        <item>windsurfing</item>
+        <item>yoga</item>
+        <item>zumba</item>
+        <item>aikido</item>
+        <item>boxing</item>
+        <item>capoeira</item>
+        <item>disc golf</item>
+        <item>fencing</item>
+        <item>handball</item>
+        <item>judo</item>
+        <item>kendo</item>
+        <item>lacrosse</item>
+        <item>marathon</item>
+        <item>muaythai</item>
+        <item>oriental martial arts</item>
+        <item>paddleboarding</item>
+        <item>parkour</item>
+        <item>roller skating</item>
+        <item>rowing</item>
+        <item>sailing</item>
+        <item>skijumping</item>
     </string-array>
 </resources>

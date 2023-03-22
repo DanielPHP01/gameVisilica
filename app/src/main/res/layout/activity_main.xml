@@ -26,6 +26,16 @@
             android:textColor="@color/black"
             android:letterSpacing="0.1"
             android:text="Names of sport" />
+
+        <TextView
+            android:id="@+id/text_view_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textColor="@color/orange"
+            android:textSize="30sp" />
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_try_again"
             android:layout_width="wrap_content"
@@ -34,7 +44,7 @@
             android:textColor="@color/white"
             android:text="TRY AGAIN"
             android:layout_gravity="right"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -52,6 +62,7 @@
             android:autoSizeTextType="uniform"
             android:textAlignment="center"
             android:textAllCaps="true"
+            android:textColor="@color/black"
             android:letterSpacing="0.1"
             android:text="TextView" />
 
@@ -77,6 +88,7 @@
                     android:layout_height="match_parent"
                     android:autoSizeTextType="uniform"
                     android:padding="1dp"
+                    android:textColor="@color/black"
                     android:layout_weight="1"
                     android:onClick="onClickLetter"
                     android:text="A" />
@@ -86,12 +98,14 @@
                     android:id="@+id/buttonB"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:textColor="@color/black"
                     android:autoSizeTextType="uniform"
                     android:padding="1dp"
                     android:layout_weight="1"
                     android:onClick="onClickLetter"
                     android:text="B" />
                 <androidx.appcompat.widget.AppCompatButton
+                    android:textColor="@color/black"
                     android:background="@drawable/button"
                     android:id="@+id/buttonC"
                     android:layout_width="wrap_content"
@@ -105,6 +119,7 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:background="@drawable/button"
                     android:id="@+id/buttonD"
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:autoSizeTextType="uniform"
@@ -115,6 +130,7 @@
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:background="@drawable/button"
+                    android:textColor="@color/black"
                     android:id="@+id/buttonE"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -129,6 +145,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:autoSizeTextType="uniform"
+                    android:textColor="@color/black"
                     android:padding="1dp"
                     android:layout_weight="1"
                     android:onClick="onClickLetter"
@@ -138,6 +155,7 @@
                     android:background="@drawable/button"
                     android:id="@+id/buttonG"
                     android:layout_width="wrap_content"
+                    android:textColor="@color/black"
                     android:layout_height="match_parent"
                     android:autoSizeTextType="uniform"
                     android:padding="1dp"
@@ -147,6 +165,7 @@
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:background="@drawable/button"
+                    android:textColor="@color/black"
                     android:id="@+id/buttonH"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -158,6 +177,7 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:background="@drawable/button"
                     android:id="@+id/buttonI"
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:autoSizeTextType="uniform"
@@ -175,6 +195,7 @@
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:background="@drawable/button"
+                    android:textColor="@color/black"
                     android:id="@+id/buttonJ"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -189,6 +210,7 @@
                     android:id="@+id/buttonK"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:textColor="@color/black"
                     android:autoSizeTextType="uniform"
                     android:padding="1dp"
                     android:layout_weight="1"
@@ -203,6 +225,7 @@
                     android:autoSizeTextType="uniform"
                     android:padding="1dp"
                     android:layout_weight="1"
+                    android:textColor="@color/black"
                     android:onClick="onClickLetter"
                     android:text="L" />
 
@@ -211,6 +234,7 @@
                     android:id="@+id/buttonM"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:textColor="@color/black"
                     android:autoSizeTextType="uniform"
                     android:padding="1dp"
                     android:layout_weight="1"
@@ -225,6 +249,7 @@
                     android:autoSizeTextType="uniform"
                     android:padding="1dp"
                     android:layout_weight="1"
+                    android:textColor="@color/black"
                     android:onClick="onClickLetter"
                     android:text="N" />
 
@@ -234,6 +259,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:autoSizeTextType="uniform"
+                    android:textColor="@color/black"
                     android:padding="1dp"
                     android:onClick="onClickLetter"
                     android:layout_weight="1"
@@ -246,6 +272,7 @@
                     android:layout_height="match_parent"
                     android:autoSizeTextType="uniform"
                     android:padding="1dp"
+                    android:textColor="@color/black"
                     android:layout_weight="1"
                     android:onClick="onClickLetter"
                     android:text="P" />
@@ -253,6 +280,7 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:background="@drawable/button"
                     android:id="@+id/buttonQ"
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:autoSizeTextType="uniform"
@@ -267,6 +295,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:autoSizeTextType="uniform"
+                    android:textColor="@color/black"
                     android:padding="1dp"
                     android:layout_weight="1"
                     android:onClick="onClickLetter"
@@ -284,6 +313,7 @@
                     android:id="@+id/buttonS"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:textColor="@color/black"
                     android:autoSizeTextType="uniform"
                     android:padding="1dp"
                     android:layout_weight="1"
@@ -293,6 +323,7 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:background="@drawable/button"
                     android:id="@+id/buttonT"
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:autoSizeTextType="uniform"
@@ -308,6 +339,7 @@
                     android:layout_height="match_parent"
                     android:autoSizeTextType="uniform"
                     android:padding="1dp"
+                    android:textColor="@color/black"
                     android:layout_weight="1"
                     android:onClick="onClickLetter"
                     android:text="U" />
@@ -317,6 +349,7 @@
                     android:id="@+id/buttonV"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:textColor="@color/black"
                     android:autoSizeTextType="uniform"
                     android:padding="1dp"
                     android:layout_weight="1"
@@ -330,6 +363,7 @@
                     android:layout_height="match_parent"
                     android:autoSizeTextType="uniform"
                     android:padding="1dp"
+                    android:textColor="@color/black"
                     android:onClick="onClickLetter"
                     android:layout_weight="1"
                     android:text="W" />
@@ -342,6 +376,7 @@
                     android:autoSizeTextType="uniform"
                     android:padding="1dp"
                     android:onClick="onClickLetter"
+                    android:textColor="@color/black"
                     android:layout_weight="1"
                     android:text="X" />
 
@@ -352,6 +387,7 @@
                     android:layout_height="match_parent"
                     android:autoSizeTextType="uniform"
                     android:padding="1dp"
+                    android:textColor="@color/black"
                     android:onClick="onClickLetter"
                     android:layout_weight="1"
                     android:text="Y" />
@@ -363,6 +399,7 @@
                     android:layout_height="match_parent"
                     android:autoSizeTextType="uniform"
                     android:padding="1dp"
+                    android:textColor="@color/black"
                     android:onClick="onClickLetter"
                     android:layout_weight="1"
                     android:text="Z" />

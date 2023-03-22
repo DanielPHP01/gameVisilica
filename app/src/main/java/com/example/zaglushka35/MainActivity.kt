@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var wordToGuess: String
     private var errors: Int = 0
+    private var score: Int = 0
     private val hangmanImages = arrayOf(
         R.drawable.wisielec, R.drawable.wisielec0, R.drawable.wisielec1, R.drawable.wisielec2,
         R.drawable.wisielec3, R.drawable.wisielec4, R.drawable.wisielec5, R.drawable.wisielec6,
@@ -39,6 +40,8 @@ class MainActivity : AppCompatActivity() {
 
     fun checkLetter(letterGuessed: Char) {
         if (wordToGuess.contains(letterGuessed, ignoreCase = true)) {
+            score++
+            // код для обработки правильной буквы
             var newText = ""
             var actualText = binding.textViewWord.text.toString()
             for (i in wordToGuess.indices) {
@@ -46,7 +49,7 @@ class MainActivity : AppCompatActivity() {
             }
             binding.textViewWord.text = newText
             if (!binding.textViewWord.text.toString().contains("_")) {
-                onTryAgain()
+                onNext()
                 val buttons = arrayOf(
                     binding.buttonA,
                     binding.buttonB,
@@ -75,55 +78,121 @@ class MainActivity : AppCompatActivity() {
                     binding.buttonY,
                     binding.buttonZ
                 )
-                buttons.forEach { button -> button.isEnabled = false }
+                buttons.forEach { button ->
+                    button.setBackgroundResource(R.drawable.edit_button)
+                    button.isEnabled = false
+                }
             }
         } else {
-            errors++;
+            errors++
+            binding.textViewScore.text =
+                getString(R.string.score, score) // обновляем отображение очков
             binding.imageView.setImageResource(hangmanImages[errors])
             if (errors + 1 >= hangmanImages.size) {
-                onTryAgain()
-                binding.textViewWord.text = wordToGuess
-                val buttons = arrayOf(
-                    binding.buttonA,
-                    binding.buttonB,
-                    binding.buttonC,
-                    binding.buttonD,
-                    binding.buttonE,
-                    binding.buttonF,
-                    binding.buttonG,
-                    binding.buttonH,
-                    binding.buttonI,
-                    binding.buttonJ,
-                    binding.buttonK,
-                    binding.buttonL,
-                    binding.buttonM,
-                    binding.buttonN,
-                    binding.buttonO,
-                    binding.buttonP,
-                    binding.buttonQ,
-                    binding.buttonR,
-                    binding.buttonS,
-                    binding.buttonT,
-                    binding.buttonU,
-                    binding.buttonV,
-                    binding.buttonW,
-                    binding.buttonX,
-                    binding.buttonY,
-                    binding.buttonZ
-                )
-                buttons.forEach { button -> button.isEnabled = false }
+                binding.imageView.setImageResource(hangmanImages[errors])
+                if (errors + 1 >= hangmanImages.size) {
+                    onTryAgain()
+                    binding.textViewWord.text = wordToGuess
+                    val buttons = arrayOf(
+                        binding.buttonA,
+                        binding.buttonB,
+                        binding.buttonC,
+                        binding.buttonD,
+                        binding.buttonE,
+                        binding.buttonF,
+                        binding.buttonG,
+                        binding.buttonH,
+                        binding.buttonI,
+                        binding.buttonJ,
+                        binding.buttonK,
+                        binding.buttonL,
+                        binding.buttonM,
+                        binding.buttonN,
+                        binding.buttonO,
+                        binding.buttonP,
+                        binding.buttonQ,
+                        binding.buttonR,
+                        binding.buttonS,
+                        binding.buttonT,
+                        binding.buttonU,
+                        binding.buttonV,
+                        binding.buttonW,
+                        binding.buttonX,
+                        binding.buttonY,
+                        binding.buttonZ
+                    )
+                    buttons.forEach { button ->
+                        button.setBackgroundResource(R.drawable.edit_button)
+                        button.isEnabled = false
+                    }
+                }
             }
         }
     }
+
     fun onClickLetter(view: View) {
         (view as Button).isEnabled = false
         val letter = view.text.toString()[0]
         checkLetter(letter)
     }
+
     fun onTryAgain() {
+        binding.btnTryAgain.text = "Try Again"
         binding.btnTryAgain.visibility = View.VISIBLE
-        binding.btnTryAgain.setOnClickListener{
+        binding.btnTryAgain.setOnClickListener {
             recreate()
         }
+    }
+
+    fun onNext() {
+        binding.btnTryAgain.text = "Next"
+        binding.btnTryAgain.visibility = View.VISIBLE
+        binding.btnTryAgain.setOnClickListener {
+           startNextGame()
+        }
+    }
+    fun startNextGame() {
+        // Генерация нового слова
+        wordToGuess = generateWord()
+        // Сброс изображения повешенного человека
+        binding.imageView.setImageResource(R.drawable.wisielec)
+        // Сброс счетчика ошибок
+        errors = 0
+        // Сброс счетчика очков
+        // Сброс состояния кнопок
+        val buttons = arrayOf(
+            binding.buttonA,
+            binding.buttonB,
+            binding.buttonC,
+            binding.buttonD,
+            binding.buttonE,
+            binding.buttonF,
+            binding.buttonG,
+            binding.buttonH,
+            binding.buttonI,
+            binding.buttonJ,
+            binding.buttonK,
+            binding.buttonL,
+            binding.buttonM,
+            binding.buttonN,
+            binding.buttonO,
+            binding.buttonP,
+            binding.buttonQ,
+            binding.buttonR,
+            binding.buttonS,
+            binding.buttonT,
+            binding.buttonU,
+            binding.buttonV,
+            binding.buttonW,
+            binding.buttonX,
+            binding.buttonY,
+            binding.buttonZ
+        )
+        buttons.forEach { button ->
+            button.setBackgroundResource(R.drawable.button)
+            button.isEnabled = true
+        }
+        // Скрытие кнопки "Try again"
+        binding.btnTryAgain.visibility = View.GONE
     }
 }

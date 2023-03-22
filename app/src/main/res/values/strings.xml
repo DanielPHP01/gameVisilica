@@ -53,11 +53,11 @@
         <item>skydiving</item>
         <item>snowboarding</item>
         <item>squash</item>
-        <item>table tennis</item>
+        <item>tabletennis</item>
         <item>taekwondo</item>
-        <item>track and field</item>
+        <item>trackandfield</item>
         <item>triathlon</item>
-        <item>ultimate frisbee</item>
+        <item>ultimatefrisbee</item>
         <item>waterpolo</item>
         <item>weightlifting</item>
         <item>windsurfing</item>
@@ -74,12 +74,14 @@
         <item>lacrosse</item>
         <item>marathon</item>
         <item>muaythai</item>
-        <item>oriental martial arts</item>
+        <item>orientalmartialarts</item>
         <item>paddleboarding</item>
         <item>parkour</item>
-        <item>roller skating</item>
+        <item>rollerskating</item>
         <item>rowing</item>
         <item>sailing</item>
         <item>skijumping</item>
     </string-array>
+    <string name="score">Score: %d</string>
+    <string name="next">next</string>
 </resources>
